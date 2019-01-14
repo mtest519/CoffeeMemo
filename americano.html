@@ -4,9 +4,20 @@
   <title>Americano</title>
   <meta charset="utf-8">
   <style>
+    #active {
+      color: red;
+      text-decoration: underline;
+    }
+    .saw {
+      color: gray;
+    }
     a {
       color: black;
       text-decoration: none;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,8 +34,9 @@
 <body>
   <h1><a href="index.html">Coffee Memo</a></h1>
   <ol>
-    <li><a href="espresso.html">Espresso</a></li>
-    <li><a href="americano.html" style="color: red; text-decoration: underline">Americano</a></li>
+    <li><a href="espresso.html" class="saw">Espresso</a></li>
+    <li><a href="americano.html" class="saw" id="active">Americano</a></li>
+    <li><a href="latte.html" class="saw">Latte</a></li>
   </ol>
 
   <h2>Americano</h2>
